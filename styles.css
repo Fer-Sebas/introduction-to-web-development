@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+h1 {
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
+    font-size: 60px;
+    font-weight: 1000;
+    color: #F8E368;
+}
+
+.color1{
+    color: #F08A85;
+}
+
+.color2{
+    color: #02B1CB;
+}
+
+.color3{
+    color: #A4D079;
+}
+
+#main-Headline {
+    text-align: center;
+}
