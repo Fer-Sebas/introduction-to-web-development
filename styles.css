@@ -88,3 +88,11 @@ a{
     width: 100%;
     overflow: scroll;
 }
+
+#protected{
+    display: none;
+}
+
+body.unlocked {
+    display: block;
+}
