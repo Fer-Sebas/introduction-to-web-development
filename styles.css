@@ -89,7 +89,7 @@ a{
     overflow: scroll;
 }
 
-#protected{
+body.protected {
     display: none;
 }
 

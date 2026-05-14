@@ -1,5 +1,5 @@
-
-const PASSWORD = "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f";
+const PASSWORD =
+  "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f";
 
 async function hashPassword(password) {
     const encoder = new TextEncoder();
@@ -9,7 +9,9 @@ async function hashPassword(password) {
 
     const hashArray = Array.from(new Uint8Array(hashBuffer));
 
-    return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+    return hashArray
+        .map(b => b.toString(16).padStart(2, "0"))
+        .join("");
 }
 
 async function unlock() {
@@ -20,9 +22,8 @@ async function unlock() {
     if (hashedInput === PASSWORD) {
         document.body.classList.add("unlocked");
         document.body.classList.remove("protected");
-    }
-    else {
-        alert("Incorrect password. Please try again.");
+    } else {
+        alert("Incorrect password.");
     }
 }
 
